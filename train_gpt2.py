@@ -154,7 +154,7 @@ if __name__=='__main__':
     parser.add_argument("--bsize_full", type=int, default=4)
 
     parser.add_argument("--nepoch", type=int, default=2)
-    parser.add_argument("--lrate", type=float, default=0.00001)
+    parser.add_argument("--lrate", type=float, default=0.0005)
 
     parser.add_argument("--out_folder", type=str, default='./output_folder/')
     parser.add_argument("--log_folder", type=str, default='./log_folder/')
