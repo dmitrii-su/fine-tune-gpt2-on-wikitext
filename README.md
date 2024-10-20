@@ -1,6 +1,6 @@
 # fine-tune-gpt2-on-wikitext
 This is the test project aimed at finetuning gpt-2 (smallest, 127M) on wikitext dataset(wikitext-103-raw-v1)
-This toy repo includes two approaches: full finetune and LoRa finetune using transformers and peft library respectively. 
+This toy repo includes two approaches: full model finetune and LoRa finetune using transformers and peft library. 
 So one can compare performance of two approaches. 
 ## How to use:
 0. Using terminal clone this repo, change folder `cd fine-tune-gpt2-on-wikitext`
