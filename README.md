@@ -6,7 +6,7 @@ So one can compare performance of two approaches.
 0. Using terminal clone this repo, change folder `cd fine-tune-gpt2-on-wikitext`
 1. Install dependencies: `pip install -r requirements.txt`
 2. Run by `python3 train_gpt2.py`  - by default uses LoRa approach, change to  `python3 train_gpt2.py -train_type = full` to train entire model
-3. Use `python3 train_gpt2.py -h` for more options and see defauls
+3. Use `python3 train_gpt2.py -h` for more options and see defauls (change --bsize_lora, for example, to max that fits yours gpu)
 4. Use `tensorboard --logdir log_dir` to view logs
 ## My results:
 1. Efficiency: LoRa uses less memory, since it has only appx. 0.5%  of trainable params of full number model params.  Hence bigger batch size is possible, bigger batch size -> faster tuning (almost two times in this case).
