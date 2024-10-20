@@ -4,8 +4,8 @@ This toy repo includes two approaches: full finetune and LoRa finetune using tra
 So one can compare performance of two approaches. 
 ## How to use:
 0. Clone repo
-1. Install dependencies: 'pip install -r requirements.txt'
-2. Run by 'python3 train_gpt2.py'  - by default uses LoRa approach, change to  -train_type = full to train entire model
-3. Use 'python3 train_gpt2.py -h' for more options
+1. Install dependencies: `pip install -r requirements.txt`
+2. Run by `python3 train_gpt2.py`  - by default uses LoRa approach, change to  -train_type = full to train entire model
+3. Use `python3 train_gpt2.py -h` for more options and see defauls
 4. Use tensorboard to view logs
       
