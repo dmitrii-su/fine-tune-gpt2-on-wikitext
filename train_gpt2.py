@@ -122,7 +122,8 @@ def main(args):
         save_strategy="epoch",
         logging_strategy="steps",
         logging_steps=100,
-        report_to = "tensorboard"
+        report_to = "tensorboard",
+        fp16 = args.use_fp16 
     )
 
     trainer = Trainer(
@@ -152,6 +153,8 @@ if __name__=='__main__':
 
     parser.add_argument("--bsize_lora", type=int, default=32)
     parser.add_argument("--bsize_full", type=int, default=4)
+    parser.add_argument("--use_fp16", type=bool, default=False)
+    
 
     parser.add_argument("--nepoch", type=int, default=2)
     parser.add_argument("--lrate", type=float, default=0.0005)
