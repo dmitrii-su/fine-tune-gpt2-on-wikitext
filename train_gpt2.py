@@ -1,10 +1,12 @@
-from transformers import (AutoModelForCausalLM, AutoTokenizer, default_data_collator, Trainer, TrainingArguments)
+import argparse
+from itertools import chain
+from transformers import (Trainer, TrainingArguments, default_data_collator, AutoTokenizer, AutoModelForCausalLM)
 from datasets import load_dataset
 from peft import LoraConfig, get_peft_model
 import evaluate
-import argparse
+
 import torch
-from itertools import chain
+
 
 
 class CastOutputToFloat(torch.nn.Sequential):
