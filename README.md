@@ -10,5 +10,5 @@ So one can compare performance of two approaches.
 4. Use `tensorboard --logdir log_dir` to view logs
 ## My results:
 1. Efficiency: LoRa uses less memory, since it has only appx. 0.5%  of trainable params of full number model params.  Hence bigger batch size is possible, bigger batch size -> faster tuning (almost two times in this case).
-2. Comparable perfomance: Both LoRa and full finetune showed similar resutls on test set using bleu metric. 
+2. Comparable perfomance: Both LoRa and full model finetune showed similar resutls on test set using bleu metric after two epoch of training. 
       
